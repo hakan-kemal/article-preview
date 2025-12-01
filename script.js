@@ -1,5 +1,7 @@
 const shareButton = document.getElementById('share-btn');
+const sharePopup = document.getElementById('share-popup');
 
 shareButton.addEventListener('click', () => {
-  console.log('Share button clicked!');
+  shareButton.classList.toggle('active');
+  sharePopup.classList.toggle('hidden');
 });
