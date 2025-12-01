@@ -19,6 +19,7 @@
   --spacing-600: 3rem;
   --spacing-700: 3.5rem;
   --spacing-800: 4rem;
+  --spacing-1000: 5rem;
   --spacing-1300: 6.5rem;
   --spacing-2000: 10rem;
 }
@@ -52,7 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin: var(--spacing-300);
+  margin-inline: var(--spacing-300);
   box-shadow: 0 var(--spacing-500) var(--spacing-500) -0.625rem rgba(201, 213, 225, 0.5);
   border-radius: 0.625rem;
   max-width: 45.625rem;
@@ -130,4 +131,25 @@ body {
   background-color: var(--color-grey-200);
   color: var(--color-grey-500);
   cursor: pointer;
+}
+
+@media (min-width: 48rem) {
+  .article-card {
+    flex-direction: row;
+    margin-inline: var(--spacing-1000);
+  }
+
+  .article-image {
+    height: auto;
+    min-width: 14.375rem;
+  }
+
+  .article-content {
+    padding: var(--spacing-500) var(--spacing-500) var(--spacing-500)
+      var(--spacing-400);
+  }
+
+  .article-author {
+    margin-top: 0;
+  }
 }
