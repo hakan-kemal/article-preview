@@ -176,6 +176,10 @@ body {
     letter-spacing: 25%;
     color: var(--color-grey-400);
   }
+
+  & a {
+    display: flex;
+  }
 }
 
 @media (min-width: 48rem) {
@@ -186,7 +190,7 @@ body {
   }
 
   .article-image {
-    min-width: 14.375rem;
+    width: 14.375rem;
     height: auto;
     object-fit: fill;
     border-top-left-radius: 0.625rem;
@@ -235,11 +239,11 @@ body {
   }
 
   .article-content {
-    padding: 1.875rem var(--spacing-400);
+    padding: 1.875rem var(--spacing-500);
   }
 
   .article-image {
-    min-width: 14.375rem;
+    width: 17.8125rem;
     height: auto;
     object-fit: cover;
   }

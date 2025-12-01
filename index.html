@@ -56,7 +56,13 @@
             </figure>
 
             <div class="share-container">
-              <button aria-label="Share Article" id="share-btn" type="button">
+              <button
+                aria-expanded="false"
+                aria-haspopup="dialog"
+                aria-label="Share Article"
+                id="share-btn"
+                type="button"
+              >
                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
                   <path
                     fill="currentColor"
@@ -65,11 +71,36 @@
                 </svg>
               </button>
 
-              <div id="share-popup" class="hidden">
+              <div
+                aria-labelledby="share-title"
+                aria-modal="true"
+                class="hidden"
+                id="share-popup"
+                role="dialog"
+                tabindex="-1"
+              >
                 <p class="share-title">Share</p>
-                <img src="./images/icon-facebook.svg" alt="Facebook Icon" />
-                <img src="./images/icon-twitter.svg" alt="Twitter Icon" />
-                <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" />
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./images/icon-facebook.svg" alt="Facebook Icon" />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./images/icon-twitter.svg" alt="Twitter Icon" />
+                </a>
+                <a
+                  href="https://pinterest.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="./images/icon-pinterest.svg" alt="Pinterest Icon" />
+                </a>
               </div>
             </div>
           </div>
