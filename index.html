@@ -24,10 +24,13 @@
   <body>
     <main>
       <article class="article-card">
-        <div class="article-image">
-          <img src="./images/drawers.jpg" alt="Drawers" />
-        </div>
-        <div class="article-content">
+        <img
+          alt="Interior image of a drawer with decorative items on top"
+          class="article-image"
+          src="./images/drawers.jpg"
+        />
+
+        <section class="article-content">
           <h1 class="article-title">
             Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
@@ -40,27 +43,23 @@
           </p>
 
           <div class="article-author">
-            <img
-              class="author-avatar"
-              src="./images/avatar-michelle.jpg"
-              alt="Michelle Appleton"
-            />
+            <figure class="author-avatar">
+              <img
+                src="./images/avatar-michelle.jpg"
+                alt="Headshot of Michelle Appleton"
+              />
 
-            <div class="author-info">
-              <p class="author-name">Michelle Appleton</p>
-              <p class="publish-date">28 Jun 2020</p>
-            </div>
+              <figcaption>
+                <strong class="author-name">Michelle Appleton</strong>
+                <span class="publish-date">28 Jun 2020</span>
+              </figcaption>
+            </figure>
 
-            <button
-              aria-label="Share Article"
-              class="share-icon"
-              id="share-btn"
-              type="button"
-            >
+            <button aria-label="Share Article" id="share-btn" type="button">
               <img src="./images/icon-share.svg" alt="" />
             </button>
           </div>
-        </div>
+        </section>
       </article>
     </main>
   </body>
